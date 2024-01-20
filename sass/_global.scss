@@ -1,0 +1,38 @@
+:root{
+    --Green:#30BE24;
+    --Red:#D11111;
+    --White:#FFFFFF;
+    --Black:#000000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Press Start 2P", system-ui;
+}
+h1{
+    font-size: 7vw;
+    color: var(--White);
+}
+h2{
+    color: var(--White);
+    font-size: 2vw;
+}
+button{
+    font-family: "Press Start 2P", system-ui;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--White);
+}

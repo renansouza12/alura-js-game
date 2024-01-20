@@ -1,0 +1,18 @@
+@use 'global';
+@use 'button';
+@use 'gameStart';
+@use 'gameContent';
+
+
+.game_container{
+    height: 100vh;
+    overflow: hidden;
+    .bg_gif{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+   
+}
+

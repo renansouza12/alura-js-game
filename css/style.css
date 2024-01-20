@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Press+Start+2P&display=swap");
+:root {
+  --Green:#30BE24;
+  --Red:#D11111;
+  --White:#FFFFFF;
+  --Black:#000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+}
+
+h1 {
+  font-size: 7vw;
+  color: var(--White);
+}
+
+h2 {
+  color: var(--White);
+  font-size: 2vw;
+}
+
+button {
+  font-family: "Press Start 2P", system-ui;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Press Start 2P", system-ui;
+  color: var(--White);
+}
+
+.btnStart {
+  background-color: var(--Green);
+  color: var(--White);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-bottom: 4px solid var(--Black);
+  border-radius: 3px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:active {
+  border-bottom: 2px solid var(--Black);
+}
+
+.btn_chute {
+  background-color: var(--Green);
+  color: var(--White);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-bottom: 4px solid var(--Black);
+  border-radius: 3px;
+}
+
+.btn_reiniciar {
+  background-color: var(--Red);
+  color: var(--White);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-bottom: 4px solid var(--Black);
+  border-radius: 3px;
+}
+
+.game_start {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.game_start.active {
+  animation: start 0.5s forwards ease;
+}
+
+@keyframes start {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(90%);
+    display: none;
+  }
+}
+.game_content {
+  height: 100%;
+  margin-top: 3rem;
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  animation: gameContent 3s forwards ease;
+}
+.game_content .input_field {
+  height: 3rem;
+  width: 50vw;
+}
+.game_content .input_field input {
+  padding: 1rem 1rem 0 1rem;
+  border-bottom: 2px solid var(--White);
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  color: var(--Black);
+}
+.game_content .input_field input::placeholder {
+  color: var(--White);
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+@keyframes gameContent {
+  0% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.game_container {
+  height: 100vh;
+  overflow: hidden;
+}
+.game_container .bg_gif {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
