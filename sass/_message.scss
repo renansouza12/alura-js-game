@@ -1,0 +1,27 @@
+.message_warning{
+    background-color: var(--Red);
+    border-radius: 1rem;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: none;
+    
+
+    .message{
+       font-size: 20px;
+       padding: 1rem;
+      color: var(--White);
+    }
+}
+.message_warning.active{
+    animation: message 0.5s forwards ease;  
+    background-color:var(--Red);
+}
+@keyframes message {
+    0%{
+        right: -10%;
+    }
+    100%{
+        right:0%;
+    }
+}

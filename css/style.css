@@ -26,6 +26,10 @@ h2 {
   font-size: 2vw;
 }
 
+p {
+  color: var(--White);
+}
+
 button {
   font-family: "Press Start 2P", system-ui;
   outline: none;
@@ -47,7 +51,7 @@ input {
   padding: 1rem 2rem;
   font-size: 2rem;
   border-bottom: 4px solid var(--Black);
-  border-radius: 3px;
+  border-radius: 10px;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -55,7 +59,7 @@ input {
 }
 
 button:active {
-  border-bottom: 2px solid var(--Black);
+  border-bottom: 1px solid var(--Black);
 }
 
 .btn_chute {
@@ -64,7 +68,7 @@ button:active {
   padding: 1rem 2rem;
   font-size: 2rem;
   border-bottom: 4px solid var(--Black);
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .btn_reiniciar {
@@ -73,7 +77,7 @@ button:active {
   padding: 1rem 2rem;
   font-size: 2rem;
   border-bottom: 4px solid var(--Black);
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .game_start {
@@ -131,6 +135,50 @@ button:active {
   }
   100% {
     transform: translateX(0px);
+  }
+}
+.game_end {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.game_end h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.message_warning {
+  background-color: var(--Red);
+  border-radius: 1rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: none;
+}
+.message_warning .message {
+  font-size: 20px;
+  padding: 1rem;
+  color: var(--White);
+}
+
+.message_warning.active {
+  animation: message 0.5s forwards ease;
+  background-color: var(--Red);
+}
+
+@keyframes message {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 0%;
   }
 }
 .game_container {

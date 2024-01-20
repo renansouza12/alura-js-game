@@ -4,7 +4,7 @@
     padding: 1rem 2rem;
     font-size:2rem;
     border-bottom: 4px solid var(--Black);
-    border-radius: 3px;
+    border-radius:10px;
 }
 .btnStart{
     @include button();   
@@ -14,7 +14,7 @@
     transform: translate(-50%,-50%);
 }
 button:active{
-    border-bottom: 2px solid var(--Black);
+    border-bottom: 1px solid var(--Black);
 }
 .btn_chute{
     @include button();

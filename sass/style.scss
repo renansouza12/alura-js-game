@@ -2,7 +2,8 @@
 @use 'button';
 @use 'gameStart';
 @use 'gameContent';
-
+@use 'gameEnd';
+@use 'message';
 
 .game_container{
     height: 100vh;
