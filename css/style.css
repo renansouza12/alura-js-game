@@ -124,8 +124,7 @@ button:active {
 }
 .game_content .input_field input::placeholder {
   color: var(--White);
-  opacity: 0.8;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @keyframes gameContent {
