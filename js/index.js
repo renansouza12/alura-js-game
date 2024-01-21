@@ -19,6 +19,12 @@ let attempts = 1;
 btnStart.addEventListener("click", () => startButton());
 btnGuess.addEventListener("click", ()=> guessButton());
 
+guess.addEventListener("keypress", (e) => {
+    if (e.key === 'Enter') {
+        guessButton();
+    }
+})
+
 btnsRestart.forEach(btn => {
     btn.addEventListener('click', () => restartGame());
 })

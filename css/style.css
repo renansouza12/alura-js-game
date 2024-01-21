@@ -156,16 +156,17 @@ button:active {
 
 .message_warning {
   background-color: var(--Red);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   position: absolute;
   top: 0%;
   right: 4%;
   display: none;
+  border: 4px solid var(--Black);
 }
 .message_warning .message {
   font-size: 20px;
   padding: 1rem;
-  color: var(--White);
+  color: var(--Black);
 }
 
 .message_warning.bigger {
