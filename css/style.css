@@ -112,11 +112,10 @@ button:active {
   animation: gameContent 3s forwards ease;
 }
 .game_content .input_field {
-  height: 3rem;
+  height: 5rem;
   width: 50vw;
 }
 .game_content .input_field input {
-  padding: 1rem 1rem 0 1rem;
   border-bottom: 2px solid var(--White);
   height: 100%;
   width: 100%;
