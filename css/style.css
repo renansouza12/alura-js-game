@@ -159,7 +159,7 @@ button:active {
   border-radius: 1rem;
   position: absolute;
   top: 0%;
-  right: 0%;
+  right: 4%;
   display: none;
 }
 .message_warning .message {
@@ -168,17 +168,28 @@ button:active {
   color: var(--White);
 }
 
-.message_warning.active {
-  animation: message 0.5s forwards ease;
+.message_warning.bigger {
+  animation: message 1s infinite ease;
   background-color: var(--Red);
 }
 
-@keyframes message {
+.message_warning.smaller {
+  animation: messageAnimation 0.5s ease-in-out;
+  background-color: blue;
+}
+
+@keyframes messageAnimation {
   0% {
-    right: -10%;
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
   }
   100% {
-    right: 0%;
+    transform: scale(1);
+    opacity: 1;
   }
 }
 .game_container {
